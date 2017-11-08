@@ -1,2 +1,1 @@
-# PYP
-Finder
+# pick-your-poison

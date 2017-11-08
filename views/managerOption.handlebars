@@ -1,0 +1,103 @@
+<div class="container">
+	<br>
+	<div class="jumbotron">
+		<h1>Manager Option</h1>
+		<h2>Fill Out The Form To Add Your Bar/Restaurant To Our Database</h2>
+	</div>
+
+	<a href="/">
+		<button type="button" class="btn btn-default" aria-label="Left Align" id="home">
+  			<span class="glyphicon glyphicon-home" aria-hidden="true"></span>  Home
+		</button>
+	</a>
+
+	<a href="/managerOption/updateRestInventory">
+		<button type="button" class="btn btn-default" aria-label="Left Align" id="home">
+  			Update Inventory
+		</button>
+	</a>
+
+	<div class="row">
+		<div class="col-sm-7">
+			<!-- restraurant form -->
+			<div class="panel panel-default">
+				<h2 class="panel panel-heading" id="rest-head">Submit Your Restaurant</h2>
+				<div class="panel panel-body">
+					<h3>Restaurant Details</h3>
+				</div>
+				<form>
+					<div class="form-group">
+						<label for="name">Name Of Your Restaurant:</label>
+						<input type="text" class="form-control" id="rest-name" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<label for="blurb">Write a Short Description Here:</label>
+						<input type="text-field" class="form-control" id="blurb-field" placeholder="Description">
+					</div>
+				</form>
+
+				<!-- second form -->
+				<h3>Drink Selection</h3>
+				<label for="form">Please Fill Out The Form For Each Drink You Have Stocked</label>
+				<div id="drink-stock-form"></div>
+				<br>
+				<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#submit-restaurant-modal" id="submit-restaurant">Submit</button>
+			</div>
+		</div>
+		
+		<div class="col-sm-5">
+			<div class="panel panel-default">
+				<h2 class="panel panel-heading" id="head">Add A Drink</h2>
+				<div class="panel panel-body">
+					<h3>Drink Details</h3>
+					<form>
+ 						<div class="form-group">
+	            <label for="name">Name Of Drink:</label>
+	            <input type="name" class="form-control" id="drink-name" placeholder="Name">
+    				</div>
+					</form>
+
+					<button type="submit" data-toggle="modal" data-target="#submit-drink-modal" class="btn btn-default" id="submit-drink">Submit</button> 
+
+				</div>
+			</div>	
+		</div>	
+
+		<div id="submit-restaurant-modal" class="modal fade" role="dialog"> 
+      <div class="modal-dialog"> 
+        <div class="modal-content"> 
+          <div class="modal-header">Submission summary:</div> 
+          <div class="modal-body"> 
+							<ul id="submission-summary"></ul>            
+          </div> 
+          <div class="modal-footer"> 
+            <button type="button" class="btn btn-default center-block" id="modal-close-btn" data-dismiss="modal">Close</button> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+
+    <div id="submit-drink-modal" class="modal fade" role="dialog"> 
+      <div class="modal-dialog"> 
+        <div class="modal-content"> 
+          <div class="modal-header">
+          	 <h2 class="modal-title">Submission successful!</h2> 
+          </div> 
+          <div class="modal-body text-center"> 
+            <h4><strong>You've submitted <span id="submitted-drink">!</span></strong></h4>                          
+          </div> 
+          <div class="modal-footer"> 
+            <button type="button" class="btn btn-default center-block" id="modal-close-btn" data-dismiss="modal">Close</button> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+
+		<img src="/assets/images/pin3.jpg" alt="bourbon pin up girl" width="455px" height="800px" id="pin">
+       	<br>
+       	<br>
+       	<img src="/assets/images/Alcohol1.jpg" alt="alcohol meme" width="455px" height="600px" id="alcohol">
+ 
+	</div>
+	<footer class="footer"> &#169; 2017 Dennis Gruszka, Jason Young, Zoli Saunt, Chang-Yeon Kim </footer>
+</div>

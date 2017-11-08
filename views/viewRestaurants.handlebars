@@ -1,0 +1,40 @@
+<div class="container">
+  <br>
+  <div class="jumbotron">
+    Find the most expensive drinks in the world!
+  </div>
+
+
+    <a href="/"> <button type="button" class="btn btn-default" aria-label="Left Align" id="home">
+  <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
+</button></a>
+<div class="row">
+  <div class="col-md-12">
+  <div class="panel panel-primary" id="drink-location-panel">
+    <div class="panel-heading">Location</div>
+    <div class="panel-body">
+      {{#each restaurant}}
+        <h3>
+          <a href="/restaurant/{{this}}"><button type="submit" class="btn btn-warning" id="{{this}}">{{this}}</button></a>
+        </h3>
+      {{/each}}
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+       <img src="/assets/images/saloon.jpg" alt="saloon sign" class="img-responsive"  >
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <br>
+
+    </div>
+  </div>
+  <footer class="footer"> &#169; 2017 Dennis Gruszka, Jason Young, Zoli Saunt, Chang-Yeon Kim </footer>
+
+</div>
