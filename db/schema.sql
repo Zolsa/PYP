@@ -16,5 +16,6 @@ CREATE TABLE restaurants(
   Michters_20yr BOOLEAN Default 0,
   Elija_Craig_18yr BOOLEAN Default 0,
   Red_Breast_15yr BOOLEAN Default 0, 
+  createdAT TIMESTAMP NOT NULL,
   PRIMARY KEY (id)
 );

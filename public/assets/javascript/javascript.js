@@ -67,7 +67,7 @@ $(document).ready(function() {
 						};
 					};
 					$("#drinks-served").empty()
-					for (var i = 0; i < drinksServed.length; i++) {
+					for (var i = 0; i < drinksServed.length-1; i++) {
 						$("#drinks-served").append('<li style="color: black">'+drinksServed[i]+'</li>');
 					};
 				});

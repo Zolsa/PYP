@@ -1,4 +1,4 @@
-// Set up MySQL connection.
+
 var mysql = require("mysql");
 
 var connection;
@@ -7,21 +7,15 @@ if (process.env.JAWSDB_URL) {
 	connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
-    port: 8889,
-    host: "localhost",
-    user: "root",
-    password: "root",
-    database: "pyp_db"
-// =======
-//   socketPath:"/Applications/MAMP/tmp/mysql/mysql.sock", 
+    port: 3306,
+    host: "yhrz9vns005e0734.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    user: "v0cmw26efxm2ieso",
+    password: "so9r26i2kusxn119",
+    database: "y5bnqj40ro5zt1js"
 
-//   user: 'root',
-//   password: 'root',
-//   database: "drinks_db"
-// >>>>>>> jason
-});
+	});
+}
 
-// Make connection.
 connection.connect(function(err) {
   if (err) {
     console.error("error connecting: " + err.stack);
@@ -30,5 +24,4 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
 });
 
-// Export connection for our ORM to use.
 module.exports = connection;
