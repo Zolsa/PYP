@@ -7,10 +7,10 @@ if (process.env.JAWSDB_URL) {
   var connection = mysql.createConnection({
   // <<<<<<< HEAD
     port: 3306,
-    host: "localhost",
-    user: "root",
-    password: "joguktong1!",
-    database: "pyp_db"
+    host: "uoa25ublaow4obx5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    user: "rvvknkhw2k5djv3b ",
+    password: "e0dkfp23zyy34j7x",
+    database: "fpkg2nd5ffnzow3y"
   // =======
   //   socketPath:"/Applications/MAMP/tmp/mysql/mysql.sock", 
 
